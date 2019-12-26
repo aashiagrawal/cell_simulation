@@ -6,7 +6,7 @@ Mathematical modeling is....
 
 To begin the cell simulation process, the foundation of the model must be programmed first. In this case, populating a grid with cells should be the first task. To start this task, a cell class must be created to create an instance for each cell and a grid class must be created to store a dictionary with a list of the cells. When initializing a cell object, the attributes that need to be defined are radius, x position, and y position.
 
-```Python
+```aashi
 from matplotlib import pyplot as plt
 from matplotlib import animation
 import matplotlib
@@ -47,7 +47,7 @@ class Cell:
 
 After creating a grid with cells, addind velocities to each cell is the next step...
 
-```python
+```aashi
 class Grid:
     ...
     def updateAllCellPositions(self):
@@ -75,7 +75,7 @@ class Cell:
 
 Finally, the last task is to accurately represent the simulation of cells by avoiding cells overlapping with each other...
 
-```python
+```aashi
 
 class Grid:
         ...
