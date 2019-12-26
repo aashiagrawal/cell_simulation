@@ -1,8 +1,19 @@
-## Overview
+# Overview
 
 Mathematical modeling is....
 
-### Task 1: Populating a grid with cells
+## Task 1: Populating a grid with cells
+
+(add some commentary)
+
+### i. Import Python plotting libraries
+```Python
+from matplotlib import pyplot as plt
+from matplotlib import animation
+import matplotlib
+import random
+import numpy as np
+```
 
 To begin the cell simulation process, the foundation of the model must be programmed first. In this case, populating a grid with cells should be the first task. To start this task, a cell class must be created to create an instance for each cell and a grid class must be created to store a dictionary with a list of the cells. When initializing a cell object, the attributes that need to be defined are radius, x position, and y position.
 
