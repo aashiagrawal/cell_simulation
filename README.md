@@ -88,12 +88,13 @@ class Grid:
                 curCell.y += self.height
             self.listOfPositions[cell] = (curCell.x, curCell.y)
 ```
-### Task 3: Controlling collisions and boundaries
+## Task 3: Controlling collisions
 
+(add commentary)
 Finally, the last task is to accurately represent the simulation of cells by avoiding cells overlapping with each other...
 
+### i. Update Grid class to control collision amongst moving cells
 ```Python
-
 class Grid:
         ...
         # Code to check for collisions
@@ -109,17 +110,7 @@ class Grid:
                     nextCell.xVelocity = -1 * nextCell.xVelocity
                     nextCell.yVelocity = -1 * nextCell.yVelocity
 
-
 ```
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
 
 **Bold** and _Italic_ and `Code` text
 
