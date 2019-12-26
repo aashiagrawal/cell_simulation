@@ -85,7 +85,7 @@ class Grid:
             curCell = self.listOfCells[i]
             for j in range(i+1, len(self.listOfCells)):
                 nextCell = self.listOfCells[j]
-                dist = np.sqrt((curCell.x - nextCell.x)**2 + (curCell.y - nextCell.y)**2)
+                dist = `np.sqrt((curCell.x - nextCell.x)**2 + (curCell.y - nextCell.y)**2)`
                 if dist < (curCell.radius + nextCell.radius):
                     curCell.xVelocity = -1 * curCell.xVelocity
                     curCell.yVelocity = -1 * curCell.yVelocity
