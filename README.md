@@ -47,6 +47,7 @@ class Cell:
         self.y = y
 ```
 ### Task 2: Moving around the cells
+```markdown
 
 # Header 1
 ## Header 2
