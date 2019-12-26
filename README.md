@@ -46,6 +46,8 @@ class Cell:
         self.x = x
         self.y = y
 ```
+### Task 2: Moving around the cells
+
 # Header 1
 ## Header 2
 ### Header 3
