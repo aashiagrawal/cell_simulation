@@ -53,13 +53,26 @@ class Cell:
         self.x = x
         self.y = y
 ```
-To begin the cell simulation process, the foundation of the model must be programmed first. In this case, populating a grid with cells should be the first task. To start this task, a cell class must be created to create an instance for each cell and a grid class must be created to store a dictionary with a list of the cells. When initializing a cell object, the attributes that need to be defined are radius, x position, and y position.
 
+## Task 2: Moving around the cells
 
-### Task 2: Moving around the cells
+(add some commentary)
+After creating a grid with cells, adding velocities to each cell is the next step...
 
-After creating a grid with cells, addind velocities to each cell is the next step...
-
+### i. Update Cell class to generate velocities
+(add some commentary)
+```Python
+class Cell:
+        ...
+        self.xVelocity = random.randint(-2, 2) 
+        while (self.xVelocity == 0):
+            self.xVelocity = random.randint(-2, 2)
+        self.yVelocity = random.randint(-2, 2) 
+        while (self.yVelocity == 0):
+            self.yVelocity = random.randint(-2, 2)
+```
+### ii. Update Grid class to compute new cell positions
+(add some commentary)
 ```Python
 class Grid:
     ...
@@ -74,15 +87,6 @@ class Grid:
             if (curCell.y < 0):
                 curCell.y += self.height
             self.listOfPositions[cell] = (curCell.x, curCell.y)
-class Cell:
-        ...
-        self.xVelocity = random.randint(-2, 2) 
-        while (self.xVelocity == 0):
-            self.xVelocity = random.randint(-2, 2)
-        self.yVelocity = random.randint(-2, 2) 
-        while (self.yVelocity == 0):
-            self.yVelocity = random.randint(-2, 2)
-
 ```
 ### Task 3: Controlling collisions and boundaries
 
@@ -131,3 +135,5 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+To begin the cell simulation process, the foundation of the model must be programmed first. In this case, populating a grid with cells should be the first task. To start this task, a cell class must be created to create an instance for each cell and a grid class must be created to store a dictionary with a list of the cells. When initializing a cell object, the attributes that need to be defined are radius, x position, and y position.
