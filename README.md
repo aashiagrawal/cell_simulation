@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+# Abstract
 
 You can use the [editor on GitHub](https://github.com/aashiagrawal/cell_simulation/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
