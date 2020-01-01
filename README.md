@@ -4,10 +4,10 @@ Mathematical modeling is....
 
 ## Task 1: Populating a grid with cells
 
-(add some commentary)
+To begin the cell simulation process, the foundation of the model must be programmed first. In this case, populating a grid with cells should be the first task.
 
 ### i. Import Python plotting libraries
-(add some commentary)
+The following import statements must be coded to access the Python plotting library, to generate random values, and to store data values.
 ```Python
 from matplotlib import pyplot as plt
 from matplotlib import animation
@@ -17,7 +17,7 @@ import numpy as np
 ```
 
 ### ii. Construct a Grid class
-(add some commentary)
+The Grid class contains a constructor to initialize a grid object. The parameter passed into the constructor is the number of cells populated on the grid. The height and width of the grid is hardcoded as well as lists containing cell objects and cell positions.
 ```Python
 class Grid:
     def __init__ (self, numCells):
@@ -29,7 +29,7 @@ class Grid:
 ```
         
 ### iii. Create a function to populate cells on the grid
-(add some commentary)
+The populateGridWithCells() function generates a random X and Y valules for each cell. After generating a random position for a cell, the function traverses through the positions of each cell in listOfPositions to check for cells with the same position. If there is a cell with the same position, the function generates a new position for the current cell and adds the position to listOfPositions.
 ```Python
     def populateGridWithCells(self):
         for i in range(self.numCells):
@@ -46,6 +46,7 @@ class Grid:
 ```
 
 ### iv. Construct a cell class
+The Cell class contains a constructor to initialize a cell object. The parameters passed into the class are the postions of the cells as well as the radius.
 ```Python
 class Cell:
     def __init__(self, radius, x, y):
@@ -55,8 +56,6 @@ class Cell:
 ```
 
 ## Task 2: Moving around the cells
-
-(add some commentary)
 After creating a grid with cells, adding velocities to each cell is the next step...
 
 ### i. Update Cell class to generate velocities
@@ -114,4 +113,4 @@ class Grid:
 
 **Bold** and _Italic_ and `Code` text
 
-To begin the cell simulation process, the foundation of the model must be programmed first. In this case, populating a grid with cells should be the first task. To start this task, a cell class must be created to create an instance for each cell and a grid class must be created to store a dictionary with a list of the cells. When initializing a cell object, the attributes that need to be defined are radius, x position, and y position.
+To start this task, a cell class must be created to create an instance for each cell and a grid class must be created to store a dictionary with a list of the cells. When initializing a cell object, the attributes that need to be defined are radius, x position, and y position.
