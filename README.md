@@ -1,6 +1,6 @@
 # Overview
 
-Mathematical modeling is....
+
 
 ## Task 1: Populating a grid with cells
 
