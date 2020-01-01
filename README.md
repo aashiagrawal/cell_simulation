@@ -56,10 +56,10 @@ class Cell:
 ```
 
 ## Task 2: Moving around the cells
-After creating a grid with cells, adding velocities to each cell is the next step...
+After creating a grid with cells, adding velocities to each cell and updating its position is the next step. 
 
 ### i. Update Cell class to generate velocities
-(add some commentary)
+Within the Cell class, random values for each X and Y component for the cell's velocity is generated. To prevent the cell from moving in a straight line - either vertical or horizontal - the regenerates a random value for the velocity component if either one of the components for the cell is 0.
 ```Python
 class Cell:
         ...
@@ -71,12 +71,11 @@ class Cell:
             self.yVelocity = random.randint(-2, 2)
 ```
 ### ii. Update Grid class to compute new cell positions
-(add some commentary)
+Within the Grid class, the updateAllCellPositions() function adds each component of the cell's velocity to the corresponding coordinate of the cell and then updates listOfPositions with the new position of each cell.
 ```Python
 class Grid:
     ...
     def updateAllCellPositions(self):
-        # Code to update each cell's position based on curent position and current velocity
         for cell in range(len(self.listOfCells)):
             curCell = self.listOfCells[cell]
             curCell.x = (curCell.x + curCell.xVelocity) % self.width
@@ -88,11 +87,10 @@ class Grid:
             self.listOfPositions[cell] = (curCell.x, curCell.y)
 ```
 ## Task 3: Controlling collisions
-
-(add commentary)
-Finally, the last task is to accurately represent the simulation of cells by avoiding cells overlapping with each other...
+The final task is to accurately represent the simulation of cells by preventing cells from overlapping with each other.
 
 ### i. Update Grid class to control collision amongst moving cells
+
 ```Python
 class Grid:
         ...
@@ -110,7 +108,3 @@ class Grid:
                     nextCell.yVelocity = -1 * nextCell.yVelocity
 
 ```
-
-**Bold** and _Italic_ and `Code` text
-
-To start this task, a cell class must be created to create an instance for each cell and a grid class must be created to store a dictionary with a list of the cells. When initializing a cell object, the attributes that need to be defined are radius, x position, and y position.
