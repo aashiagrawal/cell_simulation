@@ -87,10 +87,10 @@ class Grid:
             self.listOfPositions[cell] = (curCell.x, curCell.y)
 ```
 ## Task 3: Controlling collisions
-The final task is to accurately represent the simulation of cells by preventing cells from overlapping with each other.
+The final task is to accurately represent the simulation of cells by preventing cells from overlapping with each other once they come into contact with each other.
 
 ### i. Update Grid class to control collision amongst moving cells
-Since a collision between two cells happens when they are touching each other, the distance between the centers of the two cells would be the combined radius of the cells. The following code checks for when the distance between any two cells is each to the combined radius length of the cells and then changes each component of the cell's velocity to be negative. This way, the cells will appear as if they bounce off of each other.
+Since a collision between two cells happens when they are in contact with each other, the distance between the centers of the two cells would be the combined length of the radii of the cells. The following code checks for when the distance between any two cells is each to the combined radii length of the cells and then changes each component of the cell's velocity to be negative. This way, the cells will appear as if they bounce off of each other.
 ```Python
 class Grid:
         ...
