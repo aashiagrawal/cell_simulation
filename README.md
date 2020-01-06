@@ -207,5 +207,6 @@ def main():
 
 main()
 ```
+## Simulation Demo:
 
 ![Cell simulation demo](simulation.gif)
