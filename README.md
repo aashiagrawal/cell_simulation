@@ -208,4 +208,4 @@ def main():
 main()
 ```
 
-![Cell simulation demo](cancer_simulation/simulation.gif)
+![Cell simulation demo](simulation.gif)
