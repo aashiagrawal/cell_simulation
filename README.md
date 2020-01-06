@@ -209,4 +209,4 @@ main()
 ```
 ## Simulation Demo:
 
-![Cell simulation demo](simulation.gif)
+![Cell simulation demo](simulation_2.gif)
