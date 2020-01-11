@@ -1,6 +1,6 @@
 # Overview
 
-Mathematical models are effective tools that are used to simulate real world scenarios to develop a better understanding of what occurs in situtations that cannot be modeled in real life. By using mathematical models, various factors can be manipulated to reveal the behavior of a system in response to any variable, making these conceptual models reliable tools when investigating certain real world behaviors. To better understand how to model real world phenomena, I decided to develop a program in which a simulation could provide a basic representation of a common occurence. In this case, I chose to simulate the movement of cancer cells because of how common cancer illness is.
+Mathematical models are effective tools that are used to simulate real world scenarios to develop a better understanding of what occurs in situtations that cannot be modeled in real life. By using mathematical models, various factors can be manipulated to reveal the behavior of a system in response to any variable, making these conceptual models reliable tools when investigating certain real world behaviors. To better understand how to model real world phenomena, I decided to develop a program in which a simulation could provide a basic representation of a common occurence. In this case, I chose to simulate the movement of cancer cells because of how common cancer illness is. This allowed me to apply my computer science interest to biology.
 
 ## Task 1: Populating a grid with cells
 
